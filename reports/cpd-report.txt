@@ -1,0 +1,30 @@
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 70 of C:\Users\ashishaggarwal\Desktop\Assignment4\ImageManagementSystem\src\com\nagarro\imagemanagement\daoservice\ImageDaoService.java
+Starting at line 96 of C:\Users\ashishaggarwal\Desktop\Assignment4\ImageManagementSystem\src\com\nagarro\imagemanagement\daoservice\ImageDaoService.java
+
+	public List<Image> getImagesByUser(final User user) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		transaction = session.beginTransaction();
+		@SuppressWarnings("rawtypes")
+=====================================================================
+Found a 4 line (27 tokens) duplication in the following files: 
+Starting at line 50 of C:\Users\ashishaggarwal\Desktop\Assignment4\ImageManagementSystem\src\com\nagarro\imagemanagement\daoservice\ImageDaoService.java
+Starting at line 60 of C:\Users\ashishaggarwal\Desktop\Assignment4\ImageManagementSystem\src\com\nagarro\imagemanagement\daoservice\ImageDaoService.java
+
+	public void saveImage(final Image image) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		transaction = session.beginTransaction();
+		session.save(image);
+=====================================================================
+Found a 8 line (25 tokens) duplication in the following files: 
+Starting at line 31 of C:\Users\ashishaggarwal\Desktop\Assignment4\ImageManagementSystem\src\com\nagarro\imagemanagement\servlet\LoginServlet.java
+Starting at line 24 of C:\Users\ashishaggarwal\Desktop\Assignment4\ImageManagementSystem\src\com\nagarro\imagemanagement\servlet\SaveImage.java
+
+public class LoginServlet extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
